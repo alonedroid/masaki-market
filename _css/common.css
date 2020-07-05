@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* ==================================================================
+CSS information
+style info :ã§í ÅiîƒópÉNÉâÉXÅj
+================================================================== */
+
+html,body { height:100%; -webkit-text-size-adjust: none; }
+#contents-inner { font-family: 'Kosugi Maru', sans-serif,"ÉÅÉCÉäÉI", Meiryo, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic"; }
+
+html { font-size: 62.5%; }
+body { font-size: 14px; font-size: 1.4rem; line-height: 1.231; background: #fff; }
+
+div, span, h1, h2, h3, h4, h5, p, ul, li, dl, dt, dd { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; }
+.nojs { display: none;}
+
+select,input,button,textarea { font: 99% arial,helvetica,clean,sans-serif;}
+table {font-size: inherit; font: 100%;}
+
+#container img { max-width: 100%; height: auto;}
+
+
+@media screen and (max-width: 768px) { /* 768pxà»â∫ÇÃãLèq */
+}
+
+@media screen and (min-width: 769px) and (max-width: 960px) { /* 769pxà»è„ÇÃãLèq 960pxà»â∫ÇÃãLèq*/
+}
+
+@media screen and (min-width: 961px) { /* 961pxà»è„ÇÃãLèq */
+}
+
+@media screen and (min-width: 1280px) { /* 1280pxà»è„ÇÃãLèq */
+}
+
+
+/* --------------------------------------------------------
+#wrapper
+-------------------------------------------------------- */
+#wrapper {
+text-align:left;
+min-width:960px;
+width: auto !important;
+width: 100%;
+position:relative;
+}
+
+
+.show-animation {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(40px);
+	transition: all 1s;
+  }
+.show-animation.is-show {
+opacity: 1;
+visibility: visible;
+transform: translateY(0px);
+}
+
+.rollover img:hover{
+	opacity:0.8;
+}
+
+.filter img:hover{
+	filter: brightness(1.1);
+}
+
+
+/* --------------------------------------------------------
+LAYOUT
+-------------------------------------------------------- */
+
+/* #container
+-------------------------------------------------------- */
+#container { position:relative; width: 100%; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+
+/* #side
+-------------------------------------------------------- */
+#side { width: 210px; min-height: 100%; padding: 23px 0 20px; background: url(../img/side_bg.png);}
+
+/* #contents
+-------------------------------------------------------- */
+#contents { width: -webkit-calc(100%); width: calc(100%); position:relative; min-height: 994px; }
+#contents-inner { padding: 0 3.125% 6.25%; }
+#lower #contents-inner { padding: 0 3.125% 9.25%; }
+
+@media screen and (min-width: 1170px) {
+#container { width: 1160px; margin: 0 auto;}
+#contents-inner { padding: 0 30px 60px; }
+#lower #contents-inner { padding: 0 30px 90px; }
+
+}
+
+/* --------------------------------------------------------
+#contents
+-------------------------------------------------------- */
+#contents:after { content: ""; display: block; clear: both; }
+#contents { zoom:1; }
+
+.detail_text {
+    font-family: 'Kosugi Maru', sans-serif,"ÉÅÉCÉäÉI", Meiryo, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic";
+    color: #8a4d41;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------------
+#logo
+-------------------------------------------------------- */
+#logo { text-align: center; margin-bottom: 23px;}
+
+
+/* --------------------------------------------------------
+#gnavi
+-------------------------------------------------------- */
+
+#gnavi { width:100%; margin: 0 auto 0; position:relative; text-align: right;}
+#gnavi:after { content: ""; display: block; clear: both; }
+#gnavi { zoom:1; }
+
+#gnavi li { margin-top: 15px; vertical-align:top; width: 67%; display: block; text-align: left; float: right;
+border-radius: 112px 0 0 112px;
+
+-webkit-border-radius: 112px 0 0 112px;
+-moz-border-radius: 112px 0 0 112px;
+}
+#gnavi li:first-child { margin-top: 0; }
+#gnavi a { display: block; }
+
+#gnavi li.btn1 { background: #14aa60;}
+#gnavi li.btn2 { background: #f18101;}
+#gnavi li.btn3 { background: #00b9cd;}
+#gnavi li.btn4 { background: #e64e89;}
+#gnavi li.btn5 { background: #b6721d;}
+
+#gnavi li:hover , #gnavi li.active { width: 92%; }
+
+#gnavi li.btn1,#gnavi li.btn2,#gnavi li.btn3,#gnavi li.btn4,#gnavi li.btn5 {
+	position: relative;
+}
+#gnavi li.btn1 .icon_new,#gnavi li.btn2 .icon_new,#gnavi li.btn3 .icon_new,#gnavi li.btn4 .icon_new,#gnavi li.btn5 .icon_new {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#gnavi li, #gnavi li::before, #gnavi li::after {
+-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+-webkit-transition: all .3s; transition: all .3s;
+}
+
+
+#btn-tw { text-align: center; margin-top: 20px; }
+#btn-tw-pocket { text-align: center; border: 3px solid #00a1ee; border-radius:10px;width: 190px;margin: 20px auto 0; }
+
+#sns-box { letter-spacing: -.45em; text-align: center; margin-top: 20px; }
+#sns-box li { display: inline-block; letter-spacing: normal; margin: 0 5px; }
+
+
+
+
+/* --------------------------------------------------------
+#footer
+-------------------------------------------------------- */
+#footer { width: 100%; font-family: 'Kosugi Maru', sans-serif,"ÉÅÉCÉäÉI", Meiryo, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic";}
+footer { width: 100%; font-family: 'Kosugi Maru', sans-serif,"ÉÅÉCÉäÉI", Meiryo, "ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic";}
+
+#top_nintendo { position: absolute; left: 0; bottom: 0; color: #FFF; padding: 10px 20px; font-size: 1.2rem;}
+#top_nintendo a { color: #FFF;
+-moz-text-shadow: -1px -1px 1px #666; -webkit-text-shadow: -1px -1px 1px #666; text-shadow: -1px -1px 1px #666;}
+
+#copyright { position: absolute; right:0; bottom: 0; color:#FFF; padding: 10px 20px; font-size: 1.2rem;
+-moz-text-shadow: -1px -1px 1px #666; -webkit-text-shadow: -1px -1px 1px #666; text-shadow: -1px -1px 1px #666; }
+
+
+
+/* --------------------------------------------------------
+îƒópÉNÉâÉX
+-------------------------------------------------------- */
+/*Link Style (Base)
+----------------------------------------------------*/
+a:link { text-decoration:underline; color:#000; }
+a:visited { text-decoration:underline; color:#000; }
+a:hover { text-decoration:underline; color:#000; }
+a:active { text-decoration:underline; color:#000; }
+
+
+/*clearfix
+----------------------------------------------------*/
+.clearfix:after { content: ""; display: block; clear: both; }
+.clearfix { zoom:1; }
+
+.cr { clear:both; }
+
+
+/*pagetop
+----------------------------------------------------*/
+.pagetop { position: absolute; right: 0; bottom: 0; margin: 0; padding: 0; width: 100%; }
+.pagetop a { display: block; cursor: pointer; }
+/*.pagetop a:hover { filter: alpha(opacity=70); -moz-opacity: 0.7; opacity: 0.7; }*/
+
+/*pageback
+----------------------------------------------------*/
+.back_to_top{
+	width: 24%;
+	text-align: center;
+	margin-bottom: 3%;
+	margin: 0 auto;
+	margin-bottom: 3%;
+	max-width:350px ;
+}
+.back_to_top img{
+	width:100%;
+}
+
+/*footer
+----------------------------------------------------*/
+footer{
+    padding: 10px 0;
+	background: #755732;
+}
+.footer_inner{
+	margin: 0 auto;
+	max-width: 1000px;
+	color: #fff;
+}
+.footer_inner a:visited,
+.footer_inner a:link{
+	color: #fff;
+}
+.to_home{
+	position: relative;
+}
+.to_home::before {
+	position: absolute;
+    content: "";
+    top: 50%;
+    left: -16px;
+    width: 10px;
+    height: 10px;
+    margin-top: -6px;
+    background: url(../img/arrow.png) top left no-repeat;
+    background-size: 10px 10px;
+  }
+.to_home p{
+	float: right;
+}
